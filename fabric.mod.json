@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "fpsguard",
+  "version": "${version}",
+  "name": "FPS Guard",
+  "description": "Commande /fps boost et menu (touche N) pour couper les effets coûteux et gagner des FPS. Fonctionne très bien avec Sodium.",
+  "authors": ["Nicolas Claude"],
+  "license": "MIT",
+  "icon": "assets/fpsguard/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.nicolas.fpsguard.FpsGuardClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "recommends": {
+    "sodium": "*"
+  }
+}
